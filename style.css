@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(187, 75, 75);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+#auswahl {
+   display: flex;
+   flex-direction: row;
+   gap: 2%;
+  
+}
+
+
+.ticketboxes {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+
+.ticketboxes:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-header {
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+.green {
+    background-color: #4CAF50;
+}
+
+.red {
+    background-color: #e74c3c;
+}
+
+.blue {
+    background-color: #3498db;
+}
+
+.teal {
+    background-color: #1abc9c;
+}
+
+
+
+
+.card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    background-color: white;
+    text-align: left;
+}
+
+
+.ticket-type {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.ticket-price, 
+.ticket-reduced {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+}
+
+.ticket-reduced {
+    color: #555;
+}
+
+

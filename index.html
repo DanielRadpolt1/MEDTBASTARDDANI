@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js.js" defer></script>
+    <title>Straßenbahntickets</title>
+</head>
+
+<body>
+    <div id="container">
+        
+        <div id="auswahl">
+            <div onclick="tag()" class="ticketboxes" id="tag">
+                <div class="card-header green">tag</div>
+                <div class="card">
+                    <p class="type">24h Linz</p>
+                    <p class="ticket-price">Vollpreis 4€</p>
+                    <p class="ticket-reduced">Ermäßigt 2€</p>
+                </div>
+            </div>
+            <div onclick="lang()" class="ticketboxes" id="lang">
+                <div class="card-header red">lang</div>
+                <div class="card">
+                    <p class="type">Langstrecke</p>
+                    <p class="ticket-price">Vollpreis 2€</p>
+                    <p class="ticket-reduced">Ermäßigt 1€</p>
+                    <p class="ticket-reduced">Jugend 1€</p>
+
+                </div>
+            </div>
+            <div onclick="mini()" class="ticketboxes" id="mini">
+                <div class="card-header blue">kurz</div>
+                <div class="card">
+                    <p class="type">Kurzstrecke</p>
+                    <p class="ticket-price">4 Haltestellen</p>
+                    <p class="ticket-reduced">1€</p>
+                </div>
+            </div>
+
+            <div onclick="woche()" class="ticketboxes" id="woche">
+                <div class="card-header green">Woche</div>
+                <div class="card">
+                    <p class="type">7 Tage Linz</p>
+                    <p class="ticket-price">Vollpreis 4€</p>
+                    <p class="ticket-reduced">Ermäßigt 2€</p>
+                </div>
+            </div>
+
+            <div onclick="monat()" class="ticketboxes" id="monat">
+                <div class="card-header green">Monat</div>
+                <div class="card">
+                    <p class="type">31 Tage</p>
+                    <p class="ticket-price">Vollpreis 4€</p>
+                    <p class="ticket-reduced">Ermäßigt 2€</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
