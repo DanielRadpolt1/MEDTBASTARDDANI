@@ -1,5 +1,6 @@
 body{
     background-color: rgb(187, 75, 75);
+    overflow: hidden;
 }
 
 #container {
@@ -66,8 +67,19 @@ body{
     background-color: #1abc9c;
 }
 
+.expanded{
+    scale: 1.1;
+}
 
-
+.buying-div{
+    display: none;
+    background-color: #333;
+    width: 100%;
+    height: 33vh;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
 
 .card{
     padding: 10px;

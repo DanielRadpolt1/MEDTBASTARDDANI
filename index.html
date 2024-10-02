@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html longrange="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,8 +12,15 @@
 <body>
     <div id="container">
         
+        
         <div id="auswahl">
-            <div onclick="tag()" class="ticketboxes" id="tag">
+ <!--Bei jedem Ticket sollte das anfangsdatum und enddatum 
+ Es war noch nicht ganz fertig yk
+            !-->
+
+            <!--TagesKarte
+            !-->
+            <div onclick="tag(this)" class="ticketboxes" id="tag">
                 <div class="card-header green">tag</div>
                 <div class="card">
                     <p class="type">24h Linz</p>
@@ -21,26 +28,37 @@
                     <p class="ticket-reduced">Ermäßigt 2€</p>
                 </div>
             </div>
-            <div onclick="lang()" class="ticketboxes" id="lang">
-                <div class="card-header red">lang</div>
+            
+            
+
+            <!--longrangestrecke also
+            !-->
+            <div onclick="longrange(this)" class="ticketboxes" id="longrange">
+                <div class="card-header red">Langstrecke</div>
                 <div class="card">
-                    <p class="type">Langstrecke</p>
+                    <p class="type">8h</p>
                     <p class="ticket-price">Vollpreis 2€</p>
                     <p class="ticket-reduced">Ermäßigt 1€</p>
                     <p class="ticket-reduced">Jugend 1€</p>
 
                 </div>
             </div>
-            <div onclick="mini()" class="ticketboxes" id="mini">
+
+             <!--Kleine Strecke
+            !-->
+            <div onclick="mini(this)" class="ticketboxes" id="mini">
                 <div class="card-header blue">kurz</div>
                 <div class="card">
-                    <p class="type">Kurzstrecke</p>
-                    <p class="ticket-price">4 Haltestellen</p>
-                    <p class="ticket-reduced">1€</p>
+                    <p class="type">45min oder so ka</p>
+                    <p class="ticket-price">1</p>
+                    <p class="ticket-reduced">50c</p>
                 </div>
             </div>
 
-            <div onclick="woche()" class="ticketboxes" id="woche">
+
+             <!--WochenTicket
+            !-->
+            <div onclick="woche(this)" class="ticketboxes" id="woche">
                 <div class="card-header green">Woche</div>
                 <div class="card">
                     <p class="type">7 Tage Linz</p>
@@ -49,7 +67,9 @@
                 </div>
             </div>
 
-            <div onclick="monat()" class="ticketboxes" id="monat">
+             <!--MonatsTicket
+            !-->
+            <div onclick="monat(this)" class="ticketboxes" id="monat">
                 <div class="card-header green">Monat</div>
                 <div class="card">
                     <p class="type">31 Tage</p>
@@ -58,6 +78,9 @@
                 </div>
             </div>
 
+        </div>
+        <div class="buying-div" id="buyer">
+            
         </div>
     </div>
 </body>
