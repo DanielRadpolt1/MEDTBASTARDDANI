@@ -1,3 +1,9 @@
+let ticketType = '';
+let ticketDuration = 0;
+let ticketPrice = 0;
+let color = ""
+
+
 //Function das ich die Zeit bekomme und dann ausrechnen kann bis wann das jeweilige Ticket hält
 function getCurrentTime() {
     return new Date().toLocaleTimeString();
@@ -16,30 +22,34 @@ function upDateTicketInfo(typ, dauer, uhrzeit) {
 function tag(element) {
     upDateTicketInfo("Tageskarte", 24, getCurrentTime());
     toggleTicketBox(element)
+    color = "#4CAF50"
 }
 
 
 function mini(element) {
 
     upDateTicketInfo("Mini", 0.75, getCurrentTime());
-    console.log('miniiiiiiiii')
+   color = "#3498db"
     toggleTicketBox(element)
 }
 
 
 function longrange(element) {
     upDateTicketInfo("Midi", 8, getCurrentTime());
+    color = "#e74c3c"
     toggleTicketBox(element)
 }
 
 function woche(element) {
     upDateTicketInfo("Maxi", 168, getCurrentTime());
     toggleTicketBox(element)
+    color = "#1abc9c"
 }
 
 function monat(element) {
     upDateTicketInfo("Maxi", 744, getCurrentTime());
     toggleTicketBox(element)
+    color = "#ac1abc"
 }
 
 function toggleTicketBox(element) {
@@ -65,18 +75,15 @@ function toggleTicketBox(element) {
       <input type="checkbox" id="youth">
       <br>
       <p id="price"></p>
-      <button id="pay-button">Zahlen</button>
+      <button id="pay-button" onclick="payTicket()">Zahlen</button>
     </form>
   `;
   
   const quantityInput = document.getElementById('quantity');
   const youthCheckbox = document.getElementById('youth');
   const priceElement = document.getElementById('price');
-  const payButton = document.getElementById('pay-button');
   
-  let ticketType = '';
-  let ticketDuration = 0;
-  let ticketPrice = 0;
+
   
   switch (element.id) {
     case 'tag':
@@ -119,12 +126,17 @@ function toggleTicketBox(element) {
     priceElement.textContent = `Preis: ${price} €`;
   }
   
-  payButton.addEventListener('click', function() {
-    alert(`Sie haben ${quantity} ${ticketType}(s) für ${priceElement.textContent} gekauft.`);
-  });
 }
 
+
+function payTicket() {
+    document.body.innerHTML = `<img id="ticket" src="./img/Ticket.png" alt="">
+    <div id="ticket-text">
+    <div id="color-type"></div>
+    <h2 id="type-ticket">${ticketType}!</h2><br>
+    <h2 id="duration-ticket">Dauer: ${ticketDuration}h</h2>
+    <h2 id="price-ticket">Preis: ${ticketPrice}€</h2></div>`;
+    
+    document.getElementById('color-type').style.backgroundColor = color
   
-  function insertDiv() {
-    document.getElementById('buyer').innerHTML = ""
   }

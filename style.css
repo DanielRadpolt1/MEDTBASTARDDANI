@@ -67,6 +67,10 @@ body{
     background-color: #1abc9c;
 }
 
+.purple{
+    background-color: #ac1abc;
+}
+
 .expanded{
     scale: 1.1;
 }
@@ -110,3 +114,29 @@ body{
 }
 
 
+#ticket {
+    margin-top: -20%;
+    margin-left: -10%;
+}
+#type-ticket {
+    font-size: xx-large;
+}
+#duration-ticket{
+    margin-top: -1%;
+}
+#price-ticket {
+    margin-top: -1%;
+}
+
+#ticket-text{
+    margin-top: -65%;
+    margin-left: 20%;
+}
+
+#color-type{
+    position: relative;
+    width: 78.33%;
+    min-height: 15vh;
+    margin-top: 0.67%;
+    margin-left: -1.23%;
+}
