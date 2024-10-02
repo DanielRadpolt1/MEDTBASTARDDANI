@@ -14,7 +14,6 @@ function upDateTicketInfo(typ, dauer, uhrzeit) {
 
 
 
-
 function mini() {
     upDateTicketInfo("Mini", 4, getCurrentTime());
     console.log('miniiiiiiiii')
@@ -30,4 +29,8 @@ function maxi() {
 
 function tag() {
     upDateTicketInfo("Tageskarte", 1440, getCurrentTime());
+}
+
+function lang() {
+    upDateTicketInfo("lang", 3, getCurrentTime());
 }
